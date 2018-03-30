@@ -5,7 +5,7 @@
   tags: package
 
 - name: install fail2ban for RedHat
-  yum: name=fail2ban state={{ fail2ban_pkg_state }}
+  yum: name=fail2ban-server state={{ fail2ban_pkg_state }}
   when: ansible_os_family == 'RedHat'
   tags: package
 
